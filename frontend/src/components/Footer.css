@@ -1,0 +1,35 @@
+.footer-container {
+    margin: 0 auto; /* Centers the footer */
+    padding: 2rem; /* Adjust the padding */
+    width: 100%; /* Make the footer take the full width */
+    max-width: 90vw; /* Limit max width to 90% of the viewport width */
+    background: linear-gradient(to right, #3b82f6, #8b5cf6); /* Gradient from blue to purple */
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-bottom-section {
+    margin-top: 2.5rem;
+  }
+  
+  .footer-description,
+  .footer-link,
+  .footer-contact {
+    color: #e5e7eb; /* Light gray color for text */
+  }
+  
+  .footer-link:hover,
+  .footer-contact:hover {
+    color: #ffffff; /* Change color on hover */
+  }
+  
+  .footer-logo-section,
+  .footer-links-section,
+  .footer-contact-section {
+    margin-bottom: 1.25rem; /* Add spacing between sections */
+  }
+  
+  .footer-bottom-section hr {
+    border-color: #d1d5db; /* Light gray border */
+  }
+  

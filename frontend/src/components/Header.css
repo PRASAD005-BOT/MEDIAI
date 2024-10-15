@@ -1,0 +1,64 @@
+/* Header.css */
+
+.header-container {
+    position: relative;
+    padding: 50px 20px; 
+}
+
+.image-container {
+    margin-top: 20px; /* Adjust this value to control spacing */
+}
+
+.header-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-description {
+    transition: transform 0.3s;
+}
+
+.header-description:hover {
+    transform: scale(1.02);
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.book-button {
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    position: relative; /* Necessary for pulsing animation */
+    overflow: hidden; /* Clip overflow */
+}
+
+.book-button:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.book-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow on focus */
+}
+
+.header-img {
+    transition: transform 0.5s;
+}
+
+.header-img:hover {
+    transform: translateY(-5px);
+}
+
+/* Pulse Animation */
+.animate-button {
+    animation: pulse 2s infinite; /* Apply pulse animation */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Scale slightly larger */
+    }
+}

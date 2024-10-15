@@ -1,0 +1,20 @@
+.link {
+    position: relative;
+}
+
+.link:hover {
+    color: #1D4ED8; /* Example color for hover */
+}
+
+.active-link {
+    color: #1D4ED8; /* Example color for active link */
+    font-weight: bold;
+}
+
+.hover\:shadow-lg:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}

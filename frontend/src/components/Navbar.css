@@ -1,0 +1,57 @@
+.nav-item {
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffd700; /* Gold color for underline */
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.active-link {
+    color: #ffd700; /* Active link color */
+}
+
+.create-account-button {
+    background-color: #1560eb; /* Background color */
+    color: white; /* Text color */
+    padding: 12px 20px; /* Padding for the button */
+    border-radius: 8px; /* Rounded edges */
+    border: 2px solid #000000; /* Black border */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Highlight the text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: 15px; /* Space from the left */
+    margin-right: 15px; /* Add some space on the right */
+}
+
+.create-account-button:hover {
+    background-color: #e64a19; /* Darker shade for hover effect */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.create-account-button:active {
+    transform: translateY(0); /* Reset lift effect when clicked */
+}
+
+/* Optional: Add media query for responsiveness */
+@media (max-width: 640px) {
+    .nav-item {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+}
